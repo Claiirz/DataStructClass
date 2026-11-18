@@ -49,9 +49,9 @@ void display() {
 }
 
 int main() {
-    int choice, val;
+    int pil, val;
 
-    while (choice != 5){
+    while (pil != 5){
         cout << "\n===== STACK MENU =====\n";
         cout << "1. Push  2. Pop  3. Peek\n";
         cout << "4. Display  5. Exit\n\n";
@@ -59,17 +59,17 @@ int main() {
         cin >> choice;
 
 
-        if (choice == 1) {
+        if (pil == 1) {
             cout << "Enter value: ";
             cin >> val;
             push(val);     
-        } else if (choice == 2) {
+        } else if (pil == 2) {
             pop();
-        } else if (choice == 3) {
+        } else if (pil == 3) {
             peek();
-        } else if (choice == 4) {
+        } else if (pil == 4) {
             display();
-        } else if (choice == 5) {
+        } else if (pil == 5) {
             cout << "Exiting...\n";
         } else {
             cout << "Invalid choice!\n";
